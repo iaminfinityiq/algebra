@@ -13,6 +13,8 @@ class Number:
 
 class Variable:
     def __init__(self, name, level=1):
+        if len(name) != 1:
+            raise OverAlphabetError("The name must only contain 1 character!")
         self.name = name
         self.level = level
 
