@@ -1,2 +1,2 @@
 # algebra
-This is a simple algebra module that I created
+This is a simple algebra library that I created
