@@ -37,6 +37,12 @@ class Constant:
 class Term:
     def __init__(self, values):
         self.values = values
+        if not isinstance(self.values, (list, tuple)):
+            raise TypeError("A term values array must only be a list or a tuple!")
+            
+        for value in self.values:
+            if not isinstance(value, (Variable, Number, Constant)):
+                raise TypeError("A term must only consists of Variable, Number or Constant objects!")
 
     def __repr__(self):
         string = ""
