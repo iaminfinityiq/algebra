@@ -2,7 +2,7 @@ from algebra.error import *
 from sys import version_info
 
 if version_info < (3, 10):
-    raise OutdateError("To use this library, please have Python 3.10 or more. Your current Python version is Python " + version_info[0] + "." + version_info[1] + ".")
+    raise OutdateError("To use this library, please have Python 3.10 or more. Your current Python version is Python " + str(version_info[0]) + "." + str(version_info[1]) + ".")
 
 class Number:
     def __init__(self, value):
