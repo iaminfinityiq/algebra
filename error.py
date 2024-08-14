@@ -4,5 +4,8 @@ class ConstantError(Exception):
 class SubstitutionError(Exception):
     pass
 
+class OverAlphabetError(Exception):
+    pass
+
 class OutdateError(Exception):
     pass
