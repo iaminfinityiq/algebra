@@ -110,15 +110,3 @@ class Term:
             product *= value.value ** level
 
         return product
-
-class Expression:
-    def __init__(self, terms):
-        self.terms = terms
-
-    def __repr__(self):
-        string = ""
-        for i in range(len(self.terms)):
-            self.terms[i].simplify()
-            string += self.terms[i].__repr__()
-
-        return "{" + string + "}"
